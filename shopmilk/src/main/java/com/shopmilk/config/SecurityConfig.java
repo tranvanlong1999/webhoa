@@ -38,7 +38,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
  
-    	/*http.csrf().disable().authorizeRequests() // thực hiện xác thực request ngưười dùng gửi lên.
+    	http.csrf().disable().authorizeRequests() // thực hiện xác thực request ngưười dùng gửi lên.
 		
 		// không thực hiện xác thực đối với các ur/ này.
         .antMatchers("/css/**", "/js/**", "/img/**", "/vendor/**"
@@ -66,7 +66,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .loginProcessingUrl("/perform_login") // link action for form post.
         .defaultSuccessUrl("/admin", true) // when user success authenticated then go to this url.
         .failureUrl("/login?login_error=true") // nhập username, password sai thì redirect về trang nào.
-        .permitAll();*/
+        .permitAll();
  
     }
  
